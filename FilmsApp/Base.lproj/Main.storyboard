@@ -1,24 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PEV-7V-hi8">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--FilmsApp-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController storyboardIdentifier="FilmsApp" title="FilmsApp" wantsFullScreenLayout="YES" extendedLayoutIncludesOpaqueBars="YES" definesPresentationContext="YES" providesPresentationContextTransitionStyle="YES" modalTransitionStyle="crossDissolve" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" userLabel="FilmsApp" customClass="MainViewController" customModule="FilmsApp" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" tag="1" contentMode="bottom" semanticContentAttribute="playback" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" title="FilmsApp" id="bIW-15-qHE" userLabel="FilmsApp" colorLabel="IBBuiltInLabel-Purple"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="393" height="852"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1008.3969465648854" y="-2.1126760563380285"/>
+        </scene>
+        <!--Detail Film View Controller-->
+        <scene sceneID="Rmm-Dj-gkn">
+            <objects>
+                <viewController id="bcf-dg-df1" customClass="DetailFilmViewController" customModule="FilmsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QAd-AU-RM7">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ljR-9w-AZQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6jl-xW-CFs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1673" y="-2"/>
+        </scene>
+        <!--Film Pics View Controller-->
+        <scene sceneID="1Gb-b1-uja">
+            <objects>
+                <viewController id="s1R-3u-jn0" customClass="FilmPicsViewController" customModule="FilmsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A5Z-ZP-XTk">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="jIR-Xd-k1W"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ymD-aA-mJ9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2343" y="-2"/>
+        </scene>
+        <!--Full Pick ViewC Ontroller-->
+        <scene sceneID="CwQ-tz-qke">
+            <objects>
+                <viewController id="U7h-Kq-tnm" customClass="FullPickViewCOntroller" customModule="FilmsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UBw-Rp-snI">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="3gU-TG-YyO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7jT-9F-4bw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3053" y="-2"/>
+        </scene>
+        <!--Favorite FilmsV Iew Controller-->
+        <scene sceneID="vrO-1r-vdD">
+            <objects>
+                <viewController id="1ed-Fx-E9c" customClass="FavoriteFilmsVIewController" customModule="FilmsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uPe-mL-uC0">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="eCP-cd-e26"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9kf-vh-BSj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1008" y="671"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3p3-Av-nM9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PEV-7V-hi8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zjN-pz-cht">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="CPa-1T-L1M"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vg3-F7-c0o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="81.679389312977094" y="-2.1126760563380285"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
